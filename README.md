@@ -3,3 +3,4 @@
 SELECT 'title', 'rating' FROM film;
 SELECT 'length' FROM film WHERE 'length' = 100 ;
 SELECT 'length FROM film WHERE 'length' >= 50 ;
+SELECT `customer_id`, rental_id , `rental_date` FROM rental WHERE cast(FROM_UNIXTIME('2005-05-28') AS datetime) GROUP BY rental_id, customer_id, return_date ORDER BY `return_date`;
